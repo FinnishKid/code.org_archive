@@ -1,0 +1,6 @@
+var age = promptNum("What is your age?");
+if (age >= 13){
+  console.log("You can see a PG-13 movie alone");
+}else {
+  console.log("You can' see a PG-13 movie alone");
+}
