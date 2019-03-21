@@ -1,0 +1,9 @@
+onEvent("login_btn", "click", function() {
+    if (getText("password_input")=="p@ssw0rd"){
+    showElement("unlock_img");
+    hideElement("lock_img");
+}else{
+  hideElement("unlock_img");
+  showElement("lock_img");
+}
+});
