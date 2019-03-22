@@ -1,0 +1,8 @@
+var age = promptNum("Enter your age.");
+write("Age is: " + age);
+//write your code here
+if(age <= 19 && age >= 13){
+  write("You are a teenager!");
+} else {
+  write("You are NOT a teenager.");
+}
