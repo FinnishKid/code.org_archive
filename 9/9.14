@@ -1,0 +1,19 @@
+onEvent("calc_btn", "click", function() {
+  var day = getText("day_dropdown");
+  var age = getText("age_dropdown");
+  if (age < 21 && age > 12) {
+    setText("price_lbl", "You get a discount");
+  } else if (day == "Tuesday" || day == "Thursday"){
+      setText("price_lbl", "You get a discount");
+  } else {
+    setText("price_lbl", "You must pay full price");
+  }
+});
+// No need to change code below
+// it just clears out the labels when dropdown is clicked
+onEvent("age_dropdown", "click", function() {
+  setText("price_lbl", "");
+});
+onEvent("day_dropdown", "click", function() {
+  setText("price_lbl", "");
+});
