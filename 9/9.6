@@ -1,0 +1,11 @@
+var secretNumber = 6;
+onEvent("pickNumber", "change", function() {
+  var userGuess = getText("pickNumber");
+  if (userGuess == secretNumber) {
+    setText("userMessage", "You got it!");
+  } else if (secretNumber > userGuess) {
+  	setText("userMessage", "Nope that's not it. Too Low. Guess again.");
+  } else if (secretNumber < userGuess) {
+  	setText("userMessage", "Nope that's not it. Too High. Guess again.");
+  }
+});
