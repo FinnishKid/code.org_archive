@@ -1,0 +1,13 @@
+var day = prompt("Enter a day of the week.");
+var age = promptNum("Enter your age.");
+write("Day is: " + day);
+write("Age is: " + age);
+//write your code here
+if (day == "Sunday" || day == "Saturday"){
+  if (age > 7 && age < 65){
+    console.log("You get a discount!");
+  }else{
+    console.log("You get a discount!");
+  }
+}else
+  console.log("No discount for you.");
