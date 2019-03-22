@@ -1,0 +1,8 @@
+var day = prompt("Enter a day of the week.");
+write("Day is: "+day);
+//write your code here
+if(day == "Saturday" || day == "Sunday"){
+  write("It's the weekend!");
+} else {
+  write("Can't wait for the weekend to get here.");
+}
