@@ -1,0 +1,6 @@
+var die1 = -1;
+while (die1 != 2 && die1 != 3) {
+  die1 = randomNumber(1, 6);
+  write("Rolled a " + die1);
+}
+write("Done.");
