@@ -1,0 +1,8 @@
+var die1 = -1;
+var die2 = -1;
+while (die1 < 6 || die2 < 6) { 
+  die1 = randomNumber(1, 6);
+  die2 = randomNumber(1, 6);
+  write("Rolled a " + die1 + " and a " + die2);
+}
+write("Done.");
