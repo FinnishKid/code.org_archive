@@ -1,0 +1,13 @@
+var die1 = randomNumber(1, 6);
+var die2 = randomNumber(1, 6);
+var sum = die1 + die2;
+
+console.log("Rolled a " + die1 + " and a " + die2 + ", sum is " + sum);
+
+while (sum != 7 && sum != 11){
+  die1 = randomNumber(1, 6);
+  die2 = randomNumber(1, 6);
+  sum = die1 + die2;
+  console.log("Rolled a " + die1 + " and a " + die2 + ", sum is " + sum);
+}
+console.log("Done");
